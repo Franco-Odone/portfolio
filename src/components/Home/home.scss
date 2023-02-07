@@ -16,36 +16,26 @@
         font-family: 'Coolvetica';
         font-weight: 400;
 
-        // &:before {
-        //     content: '<h1>';
-        //     font-family: 'La Belle Aurore', cursive;
-        //     color: #ffd700;
-        //     font-size: 18px;
-        //     position: absolute;
-        //     margin-top: -40px;
-        //     left: -15px;
-        //     opacity: 0.6;
-        // }
+        &:before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left: -15px;
+            opacity: 0.6;
+        }
 
-        // &:after {
-        //     content: '<h1/>';
-        //     font-family: 'La Belle Aurore', cursive;
-        //     color: #ffd700;
-        //     font-size: 18px;
-        //     position: absolute;
-        //     margin-top: 18px;
-        //     margin-left: 20px;
-        //     animation: fadeIn 1s 1.7s backwards;
-        //     opacity: 0.6;
-        // }
-
-        img {
+        &:after {
+            content: '</h1>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 18px;
             margin-left: 20px;
-            opacity: 0;
-            width: 32px;
-            height: auto;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
+            opacity: 0.6;
         }
     }
 
@@ -59,7 +49,7 @@
         animation: fadeIn 1s 1.8s backwards;
     }
 
-    .flat-button {
+    .contact-button {
         color: #ffd700;
         font-size: 13px;
         font-weight: 400;
@@ -70,7 +60,7 @@
         border: 1px solid #ffd700;
         margin-top: 25px;
         float: left;
-        animation: fadeInAnimation 1s 1.8s backwards;
+        animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
 
         &:hover {
@@ -98,7 +88,7 @@
         box-sizing: border-box;
     }
 
-    .home-page .flat-button {
+    .home-page .contact-button {
         float: none;
         display: block;
         margin: 20px auto 0 auto;
