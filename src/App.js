@@ -5,6 +5,7 @@ import { Home } from './components/Home/Home';
 import { Default } from './components/PageNotFound/Default';
 
 import './App.scss';
+import { About } from './components/About/About';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Route>
         <Route path="*" element={<Default />} />
       </Routes>
