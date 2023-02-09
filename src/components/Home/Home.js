@@ -45,6 +45,7 @@ const Home = () => {
               strArray={jobArray}
               index={19}
             />
+            👨🏻‍💻
           </h1>
           <h2>JAVASCRIPT | MERN STACK | ALWAYS LEARNING </h2>
           <Link to="/contact" className="contact-button">

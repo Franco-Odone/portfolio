@@ -57,24 +57,24 @@ const About = () => {
           </p>
         </div>
 
-        <div className="cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face3">
+        <div className="animationContainer">
+          <div className="animationSpinner">
+            <div className="icon1">
               <FontAwesomeIcon icon={faNodeJs} color="#68A063" />
             </div>
-            <div className="face4">
+            <div className="icon2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
-            <div className="face5">
+            <div className="icon3">
               <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
             </div>
-            <div className="face6">
+            <div className="icon4">
+              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+            </div>
+            <div className="icon5">
+              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+            </div>
+            <div className="icon6">
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
           </div>
