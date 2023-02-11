@@ -20,6 +20,7 @@
 }
 
 //sass for loop
+// Mientras más grande el index, mayor es el delay, por ejemplo 15 es 1.5s de animation delay.
 @for $i from 1 through 37 {
     .text-animate._#{$i} {
         animation-delay: #{calc($i / 10)}s;
