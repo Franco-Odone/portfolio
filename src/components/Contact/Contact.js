@@ -1,7 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 
 import emailjs from '@emailjs/browser';
+
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import { Icon } from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import mapIcon from '../../assets/images/map-icon.png';
 
 import { AnimatedLetters } from '../AnimatedLetters/AnimatedLetters';
 
@@ -35,6 +39,11 @@ const Contact = () => {
         alert('Failed to send the message, please try again');
       });
   };
+
+  const customIcon = new Icon({
+    iconUrl: mapIcon,
+    iconSize: [38, 38],
+  });
 
   return (
     <>
@@ -86,15 +95,15 @@ const Contact = () => {
           </div>
         </div>
         <div className="map-wrap">
-          <MapContainer
-            center={[-33.45694, -70.64827]}
-            zoom={13}
-            className="leaflet-container"
-          >
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[-33.45694, -70.64827]}>
+          <MapContainer center={[-33.45694, -70.64827]} zoom={13}>
+            <TileLayer
+              url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
+              attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+              maxZoom={20}
+            />
+            <Marker position={[-33.45694, -70.64827]} icon={customIcon}>
               <Popup>
-                {'Franco lives here, come over for a cup of coffee :)'}
+                <h2>Franco lives here, come over for a cup of coffee</h2>
               </Popup>
             </Marker>
           </MapContainer>

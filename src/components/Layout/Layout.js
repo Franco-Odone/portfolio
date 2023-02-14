@@ -13,18 +13,13 @@ const Layout = () => {
     await loadFull(engine);
   }, []);
 
-  // const particlesLoaded = useCallback(async (engine) => {
-  //   console.log(engine);
-  // }, []);
-
   return (
     <div className="App">
       <Particles
-        className="particles"
         id="tsparticles"
         init={particlesInit}
-        // loaded={particlesLoaded}
         options={{
+          pauseOnBlur: true,
           style: {
             animation: 'fadeIn 3s forwards',
             animationDelay: '1s',
