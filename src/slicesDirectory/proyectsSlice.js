@@ -10,7 +10,7 @@ export const proyectsFetch = createAsyncThunk(
   'proyects/proyectsFetch',
   async () => {
     //Acordarme de poner la url en el .env
-    const response = await axios.get(`localhost:3001/proyects`);
+    const response = await axios.get('http://localhost:3001/proyects');
     return response?.data;
   }
 );
