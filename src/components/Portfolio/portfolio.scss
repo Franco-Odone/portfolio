@@ -1,117 +1,124 @@
-.portfolio-page {
-    .images-container {
-        display: flex;
-        gap: 15px;
-        height: 45vh;
-        width: 90vw;
-        flex-wrap: wrap;
-        justify-content: center;
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 20px;
+    will-change: contents;
+    opacity: 0;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
 
-        .image-box {
-            position: relative;
-            flex: 1 1 content;
-            height: 250px;
-            overflow: hidden;
-            border-radius: 10px;
-            max-width: 25%;
+    .image-box {
+        position: relative;
+        flex: 1 1 content;
+        height: 25rem;
+        overflow: hidden;
+        border-radius: 10px;
+        min-width: 25%;
+        max-width: 25%;
 
-            .portfolio-image {
-                position: absolute;
-                z-index: 2;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            .content {
-                text-align: left;
-                position: absolute;
-                width: 90%;
-                z-index: 3;
-                padding: 10px 20px;
-                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 1));
-                bottom: -70px;
-            }
-
-            .title {
-                margin-bottom: 0;
-                margin-top: 0;
-                color: #fff;
-                font-size: 24px;
-                font-weight: 500;
-                line-height: 24px;
-            }
-
-            .description {
-                font-size: 14px;
-                margin-bottom: 5px;
-                color: #fff;
-                font-weight: 700;
-            }
-
-            .btn {
-                margin-top: 30px;
-                margin-bottom: 10px;
-                padding: 0 23px;
-                height: 40px;
-                line-height: 34px;
-                border: 2px solid #ffd700;
-                border-radius: 4px;
-                font-size: 14px;
-                color: #fff;
-                background: transparent;
-                text-transform: uppercase;
-                font-weight: 700;
-                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-                cursor: pointer;
-            }
-
-            .btn:hover {
-                transform: translateY(-3px);
-                background: #ffd700;
-            }
-
-            &:after {
-                content: "";
-                background: linear-gradient(180deg, #ffd700, #000);
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 2;
-                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-                opacity: 0;
-            }
-
-            &:hover:after {
-                opacity: 0.85;
-            }
-
-            &:hover .content {
-                bottom: 0;
-                background: transparent;
-            }
+        .portfolio-image {
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-    }
 
-}
+        .content {
+            text-align: left;
+            position: absolute;
+            width: 90%;
+            z-index: 3;
+            padding: 10px 20px;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 1));
+            bottom: -70px;
+        }
 
-@media screen and (max-width: 1200px) {
-    .portfolio-page {
-        .images-container {
-            height: 45vh;
-            width: 80vw;
-            flex-wrap: wrap;
-            padding-bottom: 100px;
+        .title {
+            margin-bottom: 0;
+            margin-top: 0;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 24px;
+        }
 
-            .image-box {
-                max-width: calc(80% - 10px);
+        .description {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #fff;
+            font-weight: 700;
+        }
 
-            }
+        .btn {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding: 0 23px;
+            height: 40px;
+            line-height: 34px;
+            border: 2px solid #ffd700;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #fff;
+            background: transparent;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #ffd700;
+        }
+
+        &:after {
+            content: "";
+            background: linear-gradient(180deg, #ffd700, #000);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            opacity: 0;
+        }
+
+        &:hover:after {
+            opacity: 0.85;
+        }
+
+        &:hover .content {
+            bottom: 0;
+            background: transparent;
         }
     }
 }
+
+
+// @media screen and (max-width: 1200px) {
+//     .portfolio-page {
+//         .images-container {
+//             height: 45vh;
+//             width: 80vw;
+//             flex-wrap: wrap;
+//             padding-bottom: 100px;
+
+//             .image-box {
+//                 max-width: calc(80% - 10px);
+
+//             }
+//         }
+//     }
+// }

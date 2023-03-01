@@ -35,7 +35,7 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a Chilean-Italian developer, I discovered my passion for
+            I'm a Chilean developer, I discovered my passion for
             tecnology and programming throughout the pandemic, and since then
             I've been totally in love with the learning process, therefore I'm
             totally willing to take my knowledge and career to the next level.

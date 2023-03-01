@@ -1,11 +1,13 @@
 .home-page {
     .text-zone {
         position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
         width: 40%;
-        max-height: 90%;
+        height: fit-content;
     }
 
     h1 {
@@ -32,8 +34,10 @@
             font-family: 'La Belle Aurore', cursive;
             color: #ffd700;
             font-size: 18px;
+            line-height: 18px;
             position: absolute;
-            margin-top: 18px;
+            left: -30px;
+            bottom: -20px;
             margin-left: 20px;
             opacity: 0.6;
         }
@@ -59,6 +63,7 @@
         padding: 10px 18px;
         border: 1px solid #ffd700;
         margin-top: 25px;
+        margin-bottom: 25px;
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
@@ -93,25 +98,5 @@
         display: block;
         margin: 20px auto 0 auto;
         width: 124px;
-    }
-
-    .logo-container {
-        position: relative;
-        width: 100px;
-        height: auto;
-        top: 50px;
-        right: 0;
-        box-sizing: border-box;
-        margin: auto;
-        left: 0;
-    }
-
-    .logo-container svg {
-        position: absolute;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: 0;
-        margin: auto;
     }
 }
