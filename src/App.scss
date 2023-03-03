@@ -30,6 +30,11 @@ $primary-color: #ffd700;
     font-style: normal;
 }
 
+.App {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
 input,
 textarea {
     font-family: 'Helvetica Neue';

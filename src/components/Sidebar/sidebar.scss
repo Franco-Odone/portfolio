@@ -3,18 +3,16 @@
     width: 60px;
     height: 100%;
     position: fixed;
-    top: 0;
     z-index: 3;
-    min-height: 500px;
 
     nav {
-        display: block;
-        text-align: center;
-        position: absolute;
-        height: 210px;
-        top: 50%;
-        margin-top: -120px;
+        height: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
 
         a {
             font-size: 22px;
@@ -58,6 +56,8 @@
             &:first-child {
                 &:after {
                     content: 'HOME';
+                    margin: 0;
+                    padding: 0;
                 }
             }
         }
@@ -65,18 +65,24 @@
         a.about-link {
             &:after {
                 content: 'ABOUT';
+                margin: 0;
+                padding: 0;
             }
         }
 
         a.contact-link {
             &:after {
                 content: 'CONTACT';
+                margin: 0;
+                padding: 0;
             }
         }
 
         a.portfolio-link {
             &:after {
                 content: 'PORTFOLIO';
+                margin: 0;
+                padding: 0;
             }
         }
 
@@ -120,71 +126,62 @@
     display: none;
 }
 
-@media screen and (max-width: 1200px) {
-    .nav-bar {
-        background: transparent;
-        position: initial;
-        height: auto;
-        min-height: auto;
+// @media screen and (max-width: 1200px) {
+//     .nav-bar {
+//         background: transparent;
+//         position: initial;
+//         height: auto;
+//         min-height: auto;
 
-        ul {
-            li {
-                a {
-                    font-size: 40px;
-                }
+//         ul {
+//             display: none;
+//         }
 
-                .anchor-icon {
-                    color: #ffd700;
-                }
-            }
-        }
+//         nav {
+//             width: 100%;
+//             height: 100%;
+//             background: #181818;
+//             top: 0;
+//             left: 0;
+//             position: fixed;
+//             z-index: 2;
+//             margin: 0;
+//             transition: transform 1s;
+//             /* por defecto no se va a mostrar en la pagina */
+//             transform: translateY(-100vh);
 
+//             &.mobile-show {
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: space-evenly;
+//                 transform: none;
+//             }
 
-        nav {
-            display: none;
-        }
+//             a {
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//             }
 
-        nav {
-            width: 100%;
-            height: 100%;
-            background: #181818;
-            top: 0;
-            left: 0;
-            position: fixed;
-            z-index: 2;
-            margin: 0;
+//             a:after {
+//                 opacity: 1;
+//                 position: initial;
+//                 width: auto;
+//                 margin-left: 10PX;
+//             }
 
-            &.mobile-show {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-            }
+//             a svg {
+//                 opacity: 1 !important;
+//             }
+//         }
 
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            a:after {
-                opacity: 1;
-                position: initial;
-                width: auto;
-                margin-left: 10PX;
-            }
-
-            a svg {
-                opacity: 1 !important;
-            }
-        }
-
-        .hamburger-icon,
-        .close-icon {
-            display: block;
-            z-index: 1;
-            position: absolute;
-            top: 15px;
-            right: 15px;
-        }
-    }
-}
+//         .hamburger-icon,
+//         .close-icon {
+//             display: block;
+//             z-index: 1;
+//             position: fixed;
+//             top: 15px;
+//             right: 15px;
+//         }
+//     }
+// }
