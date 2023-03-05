@@ -1,12 +1,12 @@
 .images-container {
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     min-height: 100vh;
-    width: 92%;
+    width: 100%;
     justify-content: space-evenly;
-    padding: 10px 0 10px 20px;
-    margin-left: 60px;
+    padding: 10px 12px 10px 148px;
     will-change: contents;
     opacity: 0;
     z-index: 1;
@@ -110,6 +110,7 @@
         justify-content: space-between;
         flex-direction: column;
         margin: 0;
+        padding: 10px;
 
         .image-box {
             position: relative;
@@ -125,7 +126,7 @@
                 position: unset;
                 margin: 0;
                 bottom: unset;
-                width: 90%;
+                width: 100%;
             }
 
             .btn:hover {

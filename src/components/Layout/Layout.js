@@ -13,6 +13,9 @@ const Layout = () => {
         <br />
         <span className="bottom-tag-html">&lt;/html&gt;</span>
       </span>
+      <span className="bottom-tag-name">
+        Portfolio developed by Franco Odone
+      </span>
     </div>
   );
 };

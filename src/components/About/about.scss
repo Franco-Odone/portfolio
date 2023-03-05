@@ -1,85 +1,26 @@
-.animationContainer {
-    width: 50%;
-    height: 50%;
-    top: 0;
+.iconsContainer {
+    width: 78%;
+    height: 100%;
     padding-top: 18%;
-    margin-left: 0;
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
     right: 0;
-    overflow: hidden;
-}
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
 
-.animationSpinner {
-    animation-name: spincube;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-    transform-style: preserve-3d;
-    transform-origin: 100px 100px 0;
-    margin-left: calc(50% - 100px);
-
-    div {
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        border: 1px solid #ccc;
-        background: rgba(0, 0, 0, 0.8);
-        font-size: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 20px 0px lightyellow;
-    }
-
-    .icon1 {
-        transform: translateZ(100px);
-    }
-
-    .icon2 {
-        transform: rotateY(90deg) translateZ(100px);
-    }
-
-    .icon3 {
-        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-    }
-
-    .icon4 {
-        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    }
-
-    .icon5 {
-        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    }
-
-    .icon6 {
-        transform: rotateX(-90deg) translateZ(100px);
+    .icon {
+        height: 100px;
+        margin: 5px;
     }
 }
 
-@keyframes spincube {
-
-    0% {
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
-
-    16% {
-        // transform: rotateY(-90deg) rotateZ(90deg);
-        transform: rotateY(-90deg);
-    }
-
-    33% {
-        transform: rotateY(-90deg) rotateZ(90deg);
-    }
-
-    50% {
-        transform: rotateY(-180deg) rotateZ(90deg);
-    }
-
-    66% {
-        transform: rotateY(-270deg) rotateZ(90deg);
-    }
-
-    83% {
-        transform: rotateX(90deg);
+@media screen and (max-width: 1024px) {
+    .iconsContainer {
+        display: none;
     }
 }

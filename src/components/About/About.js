@@ -35,48 +35,53 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a Chilean developer, I discovered my passion for
-            tecnology and programming throughout the pandemic, and since then
-            I've been totally in love with the learning process, therefore I'm
-            totally willing to take my knowledge and career to the next level.
+            I'm a Chilean developer, I discovered my passion for tecnology and
+            programming throughout the pandemic, and since then I've been
+            totally in love with the learning process, therefore I'm totally
+            willing to take my knowledge and career to the next level.
           </p>
+          <br />
           <p>
             I love creating and contributing to coding projects which can
             potentially be a way to solve real-life problems with code. Looking
             forward to be part of projects which can help me boost my abilities
             and capacities, on a symbiotic collaboration. 🤝
           </p>
+          <br />
           <p>
             I'm a very ambitious developer looking for a role in an established
             IT company with the opportunity to work with the latest technologies
             on challenging and diverse projects.
           </p>
+          <br />
           <p>
             I'm quiet confident, naturally curious, and perpetually working on
             improving my chops, so let's keep in touch!
           </p>
         </div>
 
-        <div className="animationContainer">
-          <div className="animationSpinner">
-            <div className="icon1">
-              <FontAwesomeIcon icon={faNodeJs} color="#68A063" />
-            </div>
-            <div className="icon2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className="icon3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-            </div>
-            <div className="icon4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="icon5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className="icon6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-            </div>
+        <div className="iconsContainer">
+          <div>
+            <FontAwesomeIcon
+              className="icon"
+              icon={faJsSquare}
+              color="#EFD81D"
+            />
+          </div>
+          <div>
+            <FontAwesomeIcon className="icon" icon={faNodeJs} color="#68A063" />
+          </div>
+          <div>
+            <FontAwesomeIcon className="icon" icon={faReact} color="#5ED4F4" />
+          </div>
+          <div>
+            <FontAwesomeIcon className="icon" icon={faHtml5} color="#F06529" />
+          </div>
+          <div>
+            <FontAwesomeIcon className="icon" icon={faCss3} color="#28A4D9" />
+          </div>
+          <div>
+            <FontAwesomeIcon className="icon" icon={faGitAlt} color="#EC4D28" />
           </div>
         </div>
       </div>
