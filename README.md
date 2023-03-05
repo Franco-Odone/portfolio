@@ -11,7 +11,7 @@ Principales tecnologías que se usaron:
 
 ...entre otras.
 
-[Enlace al despliegue]()
+[Enlace al despliegue](https://portfolio-franco-odone.vercel.app/)
 
 [Enlace al repositorio del backend de la app](https://github.com/Franco-Odone/portfolio-backend)
 
