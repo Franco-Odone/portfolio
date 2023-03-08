@@ -51,6 +51,7 @@
 
 .container.contact-page,
 .container.about-page {
+    box-sizing: border-box;
 
     h1 {
         font-size: 53px;
@@ -89,10 +90,10 @@
     }
 
     p {
-        font-size: 13px;
+        font-size: 12px;
         color: #fff;
         font-family: sans-serif;
-        font-weight: 300;
+        font-weight: 700;
         max-width: fit-content;
         animation: pulse 1s;
 
@@ -119,6 +120,7 @@
         position: absolute;
         left: 10%;
         top: 50%;
+        box-sizing: border-box;
         transform: translateY(-50%);
         vertical-align: middle;
         display: table-cell;
@@ -133,6 +135,7 @@
 
 @media screen and (max-width: 1024px) {
     .page {
+        text-align: center;
         position: initial;
         min-height: 100vh;
         padding: 15px;
@@ -140,14 +143,26 @@
 
     .bottom-tag-name {
         right: 0;
+        left: 0;
+        top: 98%;
+        bottom: 0;
+        margin: auto;
         padding: 10px;
     }
 
     .container {
         position: initial;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
         height: auto;
         min-height: 100vh;
         z-index: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
         &.contact-page,
         &.about-page {
